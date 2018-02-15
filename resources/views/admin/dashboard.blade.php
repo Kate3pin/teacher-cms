@@ -26,7 +26,7 @@
         </div>
       </div>
     </div>
-   
+
     <div class="row">
       <div class="col-sm-6">
         <a class="btn btn-block btn-default" href="#">Создать категорию</a>
@@ -45,6 +45,6 @@
     </div>
   </div>
 
-<h1>Admin Test</h1>
+
 
 @endsection
