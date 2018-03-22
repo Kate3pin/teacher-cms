@@ -5,16 +5,17 @@
   {{-- Блок поиска --}}
   <div class="panel panel-default">
     <div class="panel-body">
-      <div class="input-group">
-        <input type="search" class="form-control">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button">
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </span>
+      <form action="{{ route('search') }}" method="get" >
+        <div class="input-group">
+          <input type="search" class="form-control" name="search" placeholder="Поиск" value=" {{ isset($search) ? $search : '' }}">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
       </div>
     </div>
-  </div>
 
   {{-- Блок виджета --}}
   <div class="panel panel-default">
